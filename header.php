@@ -42,7 +42,7 @@ $page_title = "TenantReview - Rate Your Landlord"; // Default title
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.php">TenantReview</a>
+    <a class="navbar-brand" href="index.php">RateMyLandlord</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
