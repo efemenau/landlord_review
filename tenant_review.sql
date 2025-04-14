@@ -34,7 +34,7 @@ CREATE TABLE `buildings` (
   `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
   `last_updated` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `building_type` ENUM('apartment', 'house', 'commercial', 'other') DEFAULT 'apartment'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+)
 
 -- Trigger to auto-generate building_id
 DELIMITER $$
@@ -60,7 +60,7 @@ CREATE TABLE `landlords` (
   `company` VARCHAR(100) DEFAULT NULL,
   `verification_status` TINYINT DEFAULT 0,
   `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+)
 
 -- Trigger to auto-generate landlord_id
 DELIMITER $$
@@ -83,7 +83,7 @@ CREATE TABLE `tenants` (
   `email` VARCHAR(150) NOT NULL,
   `password` VARCHAR(255) NOT NULL,
   `registered_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+)
 
 -- ---------------------------
 -- Table structure for `reviews`
@@ -117,7 +117,7 @@ CREATE TABLE `reviews` (
   `updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `approved_status` TINYINT DEFAULT 0,
   `reported_count` INT DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+)
 
 -- Trigger to auto-generate review_id
 DELIMITER $$
@@ -140,8 +140,7 @@ CREATE TABLE `review_helpfulness` (
   `user_id` CHAR(39) NOT NULL,
   `is_helpful` TINYINT DEFAULT 1,
   `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+)
 -- Trigger to auto-generate helpful_id
 DELIMITER $$
 CREATE TRIGGER `before_insert_helpfulness`
