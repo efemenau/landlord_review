@@ -16,7 +16,7 @@ require_once 'header.php';
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="assets/images/cover_1.jpg" alt="Rental Experience" class="img-fluid rounded">
+                <img src="assets/images/cover_2.jpeg" alt="Rental Experience" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@ require_once 'header.php';
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <img src="assets/images/about.jpg" alt="About Us" class="img-fluid rounded">
+                <img src="assets/images/about_1.jpeg" alt="About Us" class="img-fluid rounded">
             </div>
             <div class="col-md-6">
                 <h2 class="mb-4">About TenantReview</h2>
