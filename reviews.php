@@ -151,7 +151,7 @@ require_once 'header.php';
                                 </div>
                             </div>
                             <div class="card-footer bg-transparent">
-                                <a href="building-details.php?id=<?= $building['building_id'] ?>"
+                                <a href="building-detail.php?id=<?= $building['building_id'] ?>"
                                     class="btn btn-outline-primary w-100">
                                     View Details
                                 </a>
